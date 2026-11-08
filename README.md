@@ -1,0 +1,1 @@
+I don't have any idea how to make this but im gonna try anyways. No AI was used to make this project. If you have any tips please reach out to me on discord @nyapasu.vxo but please say in your first message what it is about cause otherwise ill block (too many bots nowadays).
