@@ -30,15 +30,25 @@ body {
     overflow: hidden;
     border-radius: 10px;
     font-family: monospace;
+    position: relative;
+    transition: height 0.5s, width 0.5s, margin 0.5s;
+}
+
+.card:hover{
+    height: 225px;
+    width: 275px;
+    margin-top: -32px;
+    margin-bottom: -32px;
+}
+
+.card:hover img{
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .cardPicture{
-    width: 100%;
-    height: 60%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    flex: .6;
+    flex: 0 0 60%;
     position: relative;
+    overflow: hidden;
 }
 .cardPicture::after{
     content: "";
@@ -49,10 +59,14 @@ body {
 }
 
 .cardPicture img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 275px;
+    height: 135px;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    display: block;
+    transition: transform 0.5s;
 }
 
 .cardTitle{
@@ -80,6 +94,7 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    align-items: center;
 }
 
 .content{
