@@ -1,0 +1,91 @@
+@font-face {
+  font-family:CloudFont;
+  src: url(Cloudy-0W244.ttf); 
+}
+
+body {
+    background: linear-gradient(#f7cac9,#dec2cb,#c5b9cd,#abb1cf,#92a8d1);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.nyapasu{
+    font-family: CloudFont , Times, serif;
+    color: transparent;
+    background: linear-gradient(#0c84a6,#0b5e70,#07313d);
+    background-clip: text;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: -20px;
+}
+
+.card{
+    display: flex;
+    min-width: 10rem;
+    max-width: 22rem;
+    width: 15rem;
+    height: 10rem;
+    background:#abb1cf;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+.cardPicture{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex: .6;
+    position: relative;
+}
+.cardPicture::after{
+    content: "";
+    inset: 0;
+    background: linear-gradient(transparent,transparent,transparent,#abb1cf);
+    position: absolute;
+    pointer-events: none;
+}
+
+.cardPicture img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.cardTitle{
+    padding-top: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardDesc{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex: .25;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.contentlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.content{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    max-width: 70rem;
+
+}
